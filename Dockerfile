@@ -7,8 +7,8 @@ FROM python:3.11
 RUN apt-get update && apt-get install -y git curl && \
     rm -rf /var/lib/apt/lists/*
 
-# Install Node.js and npm for Node-based MCP tools (e.g., Context7)
-RUN curl -fsSL https://deb.nodesource.com/setup_18.x | bash - && apt-get install -y nodejs
+# Install Node.js 20.x and npm for Node-based MCP tools (e.g., Context7, BrightData)
+RUN curl -fsSL https://deb.nodesource.com/setup_20.x | bash - && apt-get install -y nodejs
 
 
 # Install uv (uvx)

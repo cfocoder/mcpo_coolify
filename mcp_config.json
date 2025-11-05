@@ -38,12 +38,18 @@
             "agreeable-cardinal-lr8729"
         ]
         },
-        "Bright Data": {
-            "command": "npx",
-            "args": ["@brightdata/mcp"],
-            "env": {
-                "API_TOKEN": "${BRIGHTDATA_API_TOKEN}"
-            }
+        "brightdata-mcp": {
+        "command": "npx",
+        "args": [
+            "-y",
+            "@smithery/cli@latest",
+            "run",
+            "@luminati-io/brightdata-mcp",
+            "--key",
+            "5476d42e-7554-4e5b-9099-c60c5250ba68",
+            "--profile",
+            "agreeable-cardinal-lr8729"
+        ]
         },
         "perplexity": {
             "command": "npx",

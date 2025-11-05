@@ -1,9 +1,29 @@
 {
   "mcpServers": 
     {
-      "time": {
+    "context7": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@upstash/context7-mcp"
+      ],
+      "env": {
+        "DEFAULT_MINIMUM_TOKENS": ""
+      },
+      "alwaysAllow": [
+        "resolve-library-id",
+        "get-library-docs"
+      ]
+    },
+    "time": {
       "command": "uvx",
-      "args": ["mcp-server-time", "--local-timezone=America/New_York"]
+      "args": [
+        "mcp-server-time"
+      ],
+      "alwaysAllow": [
+        "get_current_time",
+        "convert_time"
+      ]
     }       
     
     }

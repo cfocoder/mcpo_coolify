@@ -33,7 +33,7 @@
             "run",
             "exa",
             "--key",
-            "${EXA_API_KEY}",
+            "5476d42e-7554-4e5b-9099-c60c5250ba68",
             "--profile",
             "agreeable-cardinal-lr8729"
         ]

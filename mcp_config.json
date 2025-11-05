@@ -27,16 +27,10 @@
         },
         "exa": {
         "command": "npx",
-        "args": [
-            "-y",
-            "@smithery/cli@latest",
-            "run",
-            "exa",
-            "--key",
-            "5476d42e-7554-4e5b-9099-c60c5250ba68",
-            "--profile",
-            "agreeable-cardinal-lr8729"
-        ]
+        "args": ["-y", "exa-mcp-server"],
+        "env": {
+            "EXA_API_KEY": "${EXA_API_KEY}"
+        }
         },
         "perplexity": {
             "command": "npx",

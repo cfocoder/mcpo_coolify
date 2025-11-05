@@ -1,0 +1,16 @@
+services:
+  mcpo:
+    image: python:3.11
+    container_name: mcpo
+    working_dir: /app
+    volumes:
+      - ./mcp_config.json:/app/mcp_config.json:ro
+    ports:
+      - "8002:8002"
+    environment:
+      - PATH=/root/.local/bin:${PATH}
+    command: >
+      sh -c "apt-get update && apt-get install -y git curl && \
+      curl -LsSf https://astral.sh/uv/install.sh | sh && \
+      git clone https://github.com/open-webui/mcpo.git /app/open-webui/mcpo && \
+      ~/.local/bin/uvx /app/open-webui/mcpo --port 8002 --config /app/mcp_config.json"

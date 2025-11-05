@@ -1,0 +1,85 @@
+{
+  "mcpServers": 
+    {
+        "context7": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@upstash/context7-mcp"
+            ],
+            "env": {
+                "DEFAULT_MINIMUM_TOKENS": ""
+            },
+            "alwaysAllow": [
+                "resolve-library-id",
+                "get-library-docs"
+            ]
+        },
+        "time": {
+            "command": "uvx",
+            "args": [
+                "mcp-server-time"
+            ],
+            "alwaysAllow": [
+                "get_current_time",
+                "convert_time"
+            ]
+        },
+        "exa": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@smithery/cli@latest",
+                "run",
+                "exa",
+                "--key",
+                "${EXA_API_KEY}"
+            ]
+        },
+        "perplexity": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "server-perplexity-ask"
+            ],
+            "env": {
+                "PERPLEXITY_API_KEY": "${PERPLEXITY_API_KEY}"
+            },
+            "type": "stdio",
+            "alwaysAllow": [
+                "perplexity_ask"
+            ]
+        },
+        "BrightData": {
+            "command": "npx",
+            "args": [
+                "@brightdata/mcp"
+            ],
+            "env": {
+                "API_TOKEN": "${BRIGHTDATA_API_TOKEN}"
+            },
+            "type": "stdio",
+            "alwaysAllow": [
+                "search_engine",
+                "scrape_as_markdown",
+                "search_engine_batch",
+                "scrape_batch"
+            ]
+        },
+        "semgrep": {
+            "type": "streamable-http",
+            "url": "https://mcp.semgrep.ai/mcp",
+            "alwaysAllow": [
+                "semgrep_rule_schema",
+                "get_supported_languages",
+                "semgrep_findings",
+                "semgrep_scan",
+                "semgrep_scan_local",
+                "semgrep_scan_with_custom_rule",
+                "security_check",
+                "get_abstract_syntax_tree"
+            ]
+        }
+    
+    }
+}

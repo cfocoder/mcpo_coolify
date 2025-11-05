@@ -33,44 +33,11 @@
             "run",
             "exa",
             "--key",
-            "${EXA_API_KEY}"
-        ],
-        "env": {
-            "EXA_API_KEY": "${EXA_API_KEY}"
-        }
-        },
-        "perplexity": {
-        "command": "npx",
-        "args": [
-            "-y",
-            "server-perplexity-ask"
-        ],
-            "env": {
-            "PERPLEXITY_API_KEY": "${PERPLEXITY_API_KEY}"
-            },
-        "type": "stdio",
-        "alwaysAllow": [
-            "perplexity_ask"
-        ]
-        },
-        "brightdata": {
-        "command": "npx",
-        "args": [
-            "server-brightdata-scrape",
-            "--key",
-            "${BRIGHTDATA_API_KEY}"
-        ],
-        "env": {
-            "BRIGHTDATA_API_KEY": "${BRIGHTDATA_API_KEY}"
-        },
-        "type": "stdio",
-        "alwaysAllow": [
-            "search_engine",
-            "scrape_as_markdown",
-            "search_engine_batch",
-            "scrape_batch"
+            "5476d42e-7554-4e5b-9099-c60c5250ba68",
+            "--profile",
+            "agreeable-cardinal-lr8729"
         ]
         }
-        
+       
     }
 }

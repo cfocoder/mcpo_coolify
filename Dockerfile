@@ -2,9 +2,13 @@
 # Use lightweight Python 3.11
 FROM python:3.11
 
+
 # Install git, curl and other essentials
 RUN apt-get update && apt-get install -y git curl && \
     rm -rf /var/lib/apt/lists/*
+
+# Install Node.js and npm for Node-based MCP tools (e.g., Context7)
+RUN curl -fsSL https://deb.nodesource.com/setup_18.x | bash - && apt-get install -y nodejs
 
 
 # Install uv (uvx)

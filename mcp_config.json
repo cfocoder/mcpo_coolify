@@ -37,6 +37,19 @@
       "alwaysAllow": [
         "search"
       ]
+    },
+    "mcp_weather_server": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@smithery/cli@latest",
+        "run",
+        "@isdaniel/mcp_weather_server",
+        "--key",
+        "5476d42e-7554-4e5b-9099-c60c5250ba68",
+        "--profile",
+        "agreeable-cardinal-lr8729"
+      ]
     }   
        
     }

@@ -36,7 +36,7 @@
         "PERPLEXITY_API_KEY": "${PERPLEXITY_API_KEY}"
       },
       "alwaysAllow": [
-        "perplexity_search"
+        "search"
       ]
     }
        

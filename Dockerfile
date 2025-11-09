@@ -21,12 +21,15 @@ WORKDIR /app
 # Clone MCPO repo locally
 RUN git clone https://github.com/open-webui/mcpo.git /app/open-webui/mcpo
 
-# Copy MCP configuration and environment variables
+# Copy MCP configuration and startup script
 COPY mcp_config.json /app/mcp_config.json
-COPY .env /app/.env
+COPY start.sh /app/start.sh
+
+# Make startup script executable
+RUN chmod +x /app/start.sh
 
 # Expose the port MCPO will run on
 EXPOSE 8002
 
-# Start MCPO using uvx from local path with environment variables
-CMD ["sh", "-c", "source /app/.env && ~/.local/bin/uvx /app/open-webui/mcpo --port 8002 --config /app/mcp_config.json"]
+# Start MCPO using the startup script
+CMD ["/app/start.sh"]

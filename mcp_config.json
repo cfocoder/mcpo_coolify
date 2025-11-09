@@ -1,58 +1,17 @@
 {
   "mcpServers": 
     {
-        "context7": {
-        "command": "npx",
-        "args": [
-            "-y",
-            "@upstash/context7-mcp"
-        ],
-        "env": {
-            "DEFAULT_MINIMUM_TOKENS": ""
-        },
-        "alwaysAllow": [
-            "resolve-library-id",
-            "get-library-docs"
-        ]
-        },
-        "time": {
-        "command": "uvx",
-        "args": [
-            "mcp-server-time"
-        ],
-        "alwaysAllow": [
-            "get_current_time",
-            "convert_time"
-        ]
-        },
-        "exa": {
-        "command": "npx",
-        "args": ["-y", "exa-mcp-server"],
-        "env": {
-            "EXA_API_KEY": "${EXA_API_KEY}"
-        }
-        },
-        "perplexity": {
-            "command": "npx",
-            "args": [
-                "-y",
-                "server-perplexity-ask"
-            ],
-            "env": {
-                "PERPLEXITY_API_KEY": "${PERPLEXITY_API_KEY}"
-            },
-            "type": "stdio",
-            "alwaysAllow": [
-                "perplexity_ask"
-            ]
-        },
-        "Bright_Data": {
-        "command": "npx",
-        "args": ["@brightdata/mcp"],
-        "env": {
-            "API_TOKEN": "${BRIGHTDATA_API_TOKEN}"
-        }
-        }
+       
+    "time": {
+      "command": "uvx",
+      "args": [
+        "mcp-server-time"
+      ],
+      "alwaysAllow": [
+        "get_current_time",
+        "convert_time"
+      ]
+    }
        
     }
 }

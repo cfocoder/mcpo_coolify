@@ -30,14 +30,13 @@
       "command": "npx",
       "args": [
         "-y",
-        "server-perplexity-ask"
+        "@jschuller/perplexity-mcp"
       ],
       "env": {
         "PERPLEXITY_API_KEY": "${PERPLEXITY_API_KEY}"
       },
-      "type": "stdio",
       "alwaysAllow": [
-        "perplexity_ask"
+        "perplexity_search"
       ]
     }
        

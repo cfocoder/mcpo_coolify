@@ -3,8 +3,8 @@
 FROM python:3.11
 
 
-# Install git, curl and other essentials
-RUN apt-get update && apt-get install -y git curl && \
+# Install git, curl and other essentials (including gettext for envsubst)
+RUN apt-get update && apt-get install -y git curl gettext && \
     rm -rf /var/lib/apt/lists/*
 
 # Install Node.js 20.x and npm for Node-based MCP tools (e.g., Context7, BrightData)

@@ -50,6 +50,17 @@
         "--profile",
         "agreeable-cardinal-lr8729"
       ]
+    },
+    "banxico": {
+      "command": "uvx",
+      "args": [
+        "--from",
+        "git+https://github.com/cfocoder/banxico_mcp",
+        "banxico-mcp-server"
+      ],
+      "env": {
+        "BANXICO_API_TOKEN": "your_token_here"
+      }
     }   
        
     }

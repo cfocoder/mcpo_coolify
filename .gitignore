@@ -1,7 +1,5 @@
 # Ignore environment files
 .env
-deploy-mcpo-coolify-guide.md
-anythingllm_mcp_servers.json
 
 # Python cache
 __pycache__/

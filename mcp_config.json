@@ -59,7 +59,7 @@
         "banxico-mcp-server"
       ],
       "env": {
-        "BANXICO_API_TOKEN": "your_token_here"
+        "BANXICO_API_TOKEN": "${BANXICO_API_TOKEN}"
       }
     }   
        

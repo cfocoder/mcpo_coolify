@@ -1,6 +1,5 @@
 {
-  "mcpServers": 
-    {
+  "mcpServers": {
        
     "time": {
       "command": "uvx",
@@ -37,6 +36,22 @@
       },
       "alwaysAllow": [
         "search"
+      ]
+    },
+    "BrightData": {
+      "command": "npx",
+      "args": [
+        "@brightdata/mcp"
+      ],
+      "env": {
+        "BRIGHTDATA_API_KEY": "${BRIGHTDATA_API_KEY}"
+      },
+      "type": "stdio",
+      "alwaysAllow": [
+        "search_engine",
+        "scrape_as_markdown",
+        "search_engine_batch",
+        "scrape_batch"
       ]
     }
        

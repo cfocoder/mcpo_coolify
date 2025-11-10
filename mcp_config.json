@@ -138,6 +138,19 @@
         "--key",
         "${SMITHERY_KEY}"
       ]
+    },
+    "linkup-mcp-server": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@smithery/cli@latest",
+        "run",
+        "@LinkupPlatform/linkup-mcp-server",
+        "--key",
+        "{SMITHERY_KEY}",
+        "--profile",
+        "${SMITHERY_PROFILE}"
+      ]
     }
     
        

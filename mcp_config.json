@@ -127,6 +127,17 @@
         "--key",
         "${SMITHERY_KEY}"
       ]
+    },
+    "context-awesome": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@smithery/cli@latest",
+        "run",
+        "@bh-rat/context-awesome",
+        "--key",
+        "${SMITHERY_KEY}"
+      ]
     }
     
        

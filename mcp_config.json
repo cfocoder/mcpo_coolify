@@ -147,7 +147,7 @@
         "run",
         "@LinkupPlatform/linkup-mcp-server",
         "--key",
-        "{SMITHERY_KEY}",
+        "${SMITHERY_KEY}",
         "--profile",
         "${SMITHERY_PROFILE}"
       ]

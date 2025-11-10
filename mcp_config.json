@@ -61,7 +61,23 @@
       "env": {
         "BANXICO_API_TOKEN": "${BANXICO_API_TOKEN}"
       }
-    }   
+    },
+    "brightdata": {
+			"command": "npx",
+			"args": [
+				"@brightdata/mcp"
+			],
+			"env": {
+				"API_TOKEN": "${BRIGHTDATA_API_KEY}"
+			},
+			"type": "stdio",
+			"alwaysAllow": [
+				"search_engine",
+				"scrape_as_markdown",
+				"search_engine_batch",
+				"scrape_batch"
+			]
+		}   
        
     }
 }

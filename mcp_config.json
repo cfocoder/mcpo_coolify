@@ -103,6 +103,19 @@
         "--profile",
         "${SMITHERY_PROFILE}"
       ]
+    },
+    "ref-tools-mcp": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@smithery/cli@latest",
+        "run",
+        "@ref-tools/ref-tools-mcp",
+        "--key",
+        "${SMITHERY_KEY}",
+        "--profile",
+        "${SMITHERY_PROFILE}"
+      ]
     }
     
        

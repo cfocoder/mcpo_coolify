@@ -116,6 +116,17 @@
         "--profile",
         "${SMITHERY_PROFILE}"
       ]
+    },
+    "microsoft_learn_mcp": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@smithery/cli@latest",
+        "run",
+        "@microsoft/learn_mcp",
+        "--key",
+        "${SMITHERY_KEY}"
+      ]
     }
     
        

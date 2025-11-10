@@ -91,19 +91,20 @@
         "${SMITHERY_PROFILE}"
       ]
     },
-    "financial-modeling-prep-mcp-server": {
+    "wolfram-llm-mcp": {
       "command": "npx",
       "args": [
         "-y",
         "@smithery/cli@latest",
         "run",
-        "@imbenrabi/financial-modeling-prep-mcp-server",
+        "@henryhawke/wolfram-llm-mcp",
         "--key",
         "${SMITHERY_KEY}",
         "--profile",
         "${SMITHERY_PROFILE}"
       ]
     }
+    
        
     }
 }

@@ -173,6 +173,19 @@
         "--key",
         "${SMITHERY_KEY}"
       ]
+    },
+    "deep-research-mcp": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@smithery/cli@latest",
+        "run",
+        "@pinkpixel-dev/deep-research-mcp",
+        "--key",
+        "${SMITHERY_KEY}",
+        "--profile",
+        "${SMITHERY_PROFILE}"
+      ]
     }
        
     }

@@ -163,17 +163,15 @@
         "${SMITHERY_KEY}"
       ]
     },
-    "server-sequential-thinking": {
+    "sequential-thinking": {
       "command": "npx",
       "args": [
         "-y",
         "@smithery/cli@latest",
         "run",
-        "@smithery-ai/server-sequential-thinking",
+        "@kiennd/reference-servers",
         "--key",
-        "${SMITHERY_KEY}",
-        "--profile",
-        "${SMITHERY_PROFILE}"
+        "${SMITHERY_KEY}"
       ]
     }
        

@@ -162,6 +162,19 @@
         "--key",
         "${SMITHERY_KEY}"
       ]
+    },
+    "server-sequential-thinking": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@smithery/cli@latest",
+        "run",
+        "@smithery-ai/server-sequential-thinking",
+        "--key",
+        "${SMITHERY_KEY}",
+        "--profile",
+        "${SMITHERY_PROFILE}"
+      ]
     }
        
     }

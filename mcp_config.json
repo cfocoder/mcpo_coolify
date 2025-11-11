@@ -140,6 +140,17 @@
         "--profile",
         "${SMITHERY_PROFILE}"
       ]
+    },
+    "flights": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@smithery/cli@latest",
+        "run",
+        "@punitarani/fli",
+        "--key",
+        "${SMITHERY_KEY}"
+      ]
     }
     
        

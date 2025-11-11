@@ -152,18 +152,17 @@
         "${SMITHERY_KEY}"
       ]
     },
-    "mcp-server-chart": {
+    "docfork": {
       "command": "npx",
       "args": [
         "-y",
         "@smithery/cli@latest",
         "run",
-        "@antvis/mcp-server-chart",
+        "@docfork/mcp",
         "--key",
         "${SMITHERY_KEY}"
       ]
     }
-    
        
     }
 }

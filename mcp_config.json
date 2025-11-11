@@ -151,6 +151,17 @@
         "--key",
         "${SMITHERY_KEY}"
       ]
+    },
+    "mcp-server-chart": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@smithery/cli@latest",
+        "run",
+        "@antvis/mcp-server-chart",
+        "--key",
+        "${SMITHERY_KEY}"
+      ]
     }
     
        

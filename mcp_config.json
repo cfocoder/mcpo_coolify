@@ -1,6 +1,5 @@
 {
   "mcpServers": {
-       
     "time": {
       "command": "uvx",
       "args": [
@@ -63,21 +62,21 @@
       }
     },
     "brightdata": {
-			"command": "npx",
-			"args": [
-				"@brightdata/mcp"
-			],
-			"env": {
-				"API_TOKEN": "${BRIGHTDATA_API_KEY}"
-			},
-			"type": "stdio",
-			"alwaysAllow": [
-				"search_engine",
-				"scrape_as_markdown",
-				"search_engine_batch",
-				"scrape_batch"
-			]
-		},
+      "command": "npx",
+      "args": [
+        "@brightdata/mcp"
+      ],
+      "env": {
+        "API_TOKEN": "${BRIGHTDATA_API_KEY}"
+      },
+      "type": "stdio",
+      "alwaysAllow": [
+        "search_engine",
+        "scrape_as_markdown",
+        "search_engine_batch",
+        "scrape_batch"
+      ]
+    },
     "mcpsemanticscholar": {
       "command": "npx",
       "args": [
@@ -173,8 +172,13 @@
         "--key",
         "${SMITHERY_KEY}"
       ]
+    },
+    "docling": {
+      "command": "uvx",
+      "args": [
+        "--from=docling-mcp",
+        "docling-mcp-server"
+      ]
     }
-
-       
-    }
+  }
 }

@@ -4,10 +4,6 @@
       "command": "uvx",
       "args": [
         "mcp-server-time"
-      ],
-      "alwaysAllow": [
-        "get_current_time",
-        "convert_time"
       ]
     },
     "context7": {
@@ -145,7 +141,7 @@
       "args": [
         "--from",
         "git+https://github.com/isaacwasserman/mcp-vegalite-server",
-        "mcp_server_vegalite", 
+        "mcp_server_vegalite",
         "--output-type",
         "png"
       ]

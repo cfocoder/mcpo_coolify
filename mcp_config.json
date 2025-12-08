@@ -74,19 +74,6 @@
         "${SMITHERY_PROFILE}"
       ]
     },
-    "wolfram-llm-mcp": {
-      "command": "npx",
-      "args": [
-        "-y",
-        "@smithery/cli@latest",
-        "run",
-        "@henryhawke/wolfram-llm-mcp",
-        "--key",
-        "${SMITHERY_KEY}",
-        "--profile",
-        "${SMITHERY_PROFILE}"
-      ]
-    },
     "ref-tools-mcp": {
       "command": "npx",
       "args": [
@@ -142,17 +129,6 @@
         "@smithery/cli@latest",
         "run",
         "@docfork/mcp",
-        "--key",
-        "${SMITHERY_KEY}"
-      ]
-    },
-    "sequential-thinking": {
-      "command": "npx",
-      "args": [
-        "-y",
-        "@smithery/cli@latest",
-        "run",
-        "@kiennd/reference-servers",
         "--key",
         "${SMITHERY_KEY}"
       ]

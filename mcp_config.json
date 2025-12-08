@@ -179,6 +179,12 @@
         "--from=docling-mcp",
         "docling-mcp-server"
       ]
+    },
+    "vegalite": {
+      "command": "uvx",
+      "args": [
+        "mcp-vegalite-server"
+      ]
     }
   }
 }

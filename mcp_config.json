@@ -167,7 +167,11 @@
     "vegalite": {
       "command": "uvx",
       "args": [
-        "mcp-vegalite-server"
+        "--from",
+        "git+https://github.com/isaacwasserman/mcp-vegalite-server",
+        "mcp-vegalite-server", 
+        "--output_type",
+        "png"
       ]
     }
   }

@@ -18,6 +18,9 @@ ENV PATH="/root/.local/bin:${PATH}"
 # Set working directory
 WORKDIR /app
 
+# Create logs directory for MCP servers
+RUN mkdir -p /app/logs
+
 # Clone MCPO repo locally
 RUN git clone https://github.com/open-webui/mcpo.git /app/open-webui/mcpo
 

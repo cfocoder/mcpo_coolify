@@ -1,10 +1,8 @@
 {
   "mcpServers": {
     "time": {
-      "command": "uvx",
-      "args": [
-        "mcp-server-time"
-      ]
+      "type": "http",
+      "url": "https://server.smithery.ai/@asaficontact/mcp-time"
     },
     "context7": {
       "command": "npx",

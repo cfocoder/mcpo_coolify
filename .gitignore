@@ -1,0 +1,16 @@
+# Ignore environment files
+.env
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Docker
+*.log
+
+# Node modules (if any MCP server uses node)
+node_modules/
+
+# OS files
+.DS_Store
+Thumbs.db

@@ -16,11 +16,8 @@
       }
     },
     "exa": {
-      "command": "npx",
-      "args": [
-        "-y",
-        "exa-mcp-server"
-      ],
+      "type": "sse",
+      "url": "https://mcp.exa.ai/mcp",
       "env": {
         "EXA_API_KEY": "${EXA_API_KEY}"
       }
